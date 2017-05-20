@@ -33,8 +33,9 @@ jupyter kernelspec list
 # Now run the test notebook
 
 jupyter nbconvert --execute --ExecutePreprocessor.timeout="60" --ExecutePreprocessor.kernel_name="scijava" "$TRAVIS_BUILD_DIR/notebooks/Welcome.ipynb"
-jupyter nbconvert --execute --ExecutePreprocessor.timeout="60" --ExecutePreprocessor.kernel_name="scijava" "$TRAVIS_BUILD_DIR/notebooks/General.ipynb"
+jupyter nbconvert --execute --ExecutePreprocessor.timeout="60" --ExecutePreprocessor.kernel_name="scijava" "$TRAVIS_BUILD_DIR/notebooks/Polyglot.ipynb"
 jupyter nbconvert --execute --ExecutePreprocessor.timeout="60" --ExecutePreprocessor.kernel_name="scijava" "$TRAVIS_BUILD_DIR/notebooks/Rich Output.ipynb"
 jupyter nbconvert --execute --ExecutePreprocessor.timeout="60" --ExecutePreprocessor.kernel_name="scijava" "$TRAVIS_BUILD_DIR/notebooks/On-The-Fly Grabbing.ipynb"
 jupyter nbconvert --execute --ExecutePreprocessor.timeout="60" --ExecutePreprocessor.kernel_name="scijava" "$TRAVIS_BUILD_DIR/notebooks/ImageJ.ipynb"
 jupyter nbconvert --execute --ExecutePreprocessor.timeout="60" --ExecutePreprocessor.kernel_name="scijava" "$TRAVIS_BUILD_DIR/notebooks/SciJava.ipynb"
+jupyter nbconvert --execute --ExecutePreprocessor.timeout="60" --ExecutePreprocessor.kernel_name="scijava" "$TRAVIS_BUILD_DIR/notebooks/Test.ipynb"
