@@ -22,9 +22,11 @@ package org.scijava.jupyter.kernel;
 
 import com.twosigma.beaker.jupyter.handler.CommOpenHandler;
 import com.twosigma.jupyter.Kernel;
+import com.twosigma.jupyter.KernelParameters;
 import com.twosigma.jupyter.KernelSocketsFactoryImpl;
 import com.twosigma.jupyter.handler.KernelHandler;
 import com.twosigma.jupyter.message.Message;
+import java.util.HashMap;
 
 import org.scijava.Context;
 import org.scijava.jupyter.kernel.comm.ScijavaCommOpenHandler;
@@ -63,6 +65,8 @@ public class ScijavaKernel extends Kernel {
         log.info("Log level used is : " + this.config.getLogLevel());
 
         log.info("Scijava Kernel is started and ready to use.");
+	
+	this.setShellOptions(new KernelParameters(new HashMap<>()));
     }
 
     @Override
